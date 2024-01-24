@@ -26,7 +26,7 @@ findByProp("post").post("https://play.blooket.com/api/playersessions/solo", {
     gameMode: "Defense"
 }).then(x=>{
     findByProp("put").put("https://play.blooket.com/api/users/add-rewards", {
-        addedTokens: 500,
+        addedTokens: 150000,
         addedXp: 500,
         t: x.data.t
     }).then((res)=>{
